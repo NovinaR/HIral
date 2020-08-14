@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Registration</title>
+    
+</head>
+<body>
+<main class="my-form">
+    <div class="cotainer">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header">Register
+                        </div>
+                        <div class="card-body">
+                            <form>   
+                              <div class="form-group row">
+                                <label for="first_name" class="col-md-4 col-form-label text-md-right">First Name</label>
+                                <div class="col-md-6">
+                                    <input type="text" id="firstname" class="form-control" name="firstname" required [(ngModel)]="register.firstname">
+                                </div>
+                              </div>
+                              <div class="form-group row">
+                                <label for="last_name" class="col-md-4 col-form-label text-md-right">Last Name</label>
+                                <div class="col-md-6">
+                                    <input type="text" id="lastname" class="form-control" name="lastname" required [(ngModel)]="register.lastname">
+                                </div>
+                              </div>
+                            <div class="form-group row">
+                                <label for="email_address" class="col-md-4 col-form-label text-md-right">E-Mail Address</label>
+                                <div class="col-md-6">
+                                    <input type="email" id="emailaddress" class="form-control" name="emailaddress" [(ngModel)]="register.email">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="user_name" class="col-md-4 col-form-label text-md-right">User Name</label>
+                                <div class="col-md-6">
+                                    <input type="text" id="username" class="form-control" name="username" required [(ngModel)]="register.username">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="pass" class="col-md-4 col-form-label text-md-right">Password</label>
+                              <div class="col-md-6">
+                                  <input type="password" id="pass" class="form-control" name="pass" required [(ngModel)]="register.password">
+                              </div>
+                          </div>
+                          <div class="form-group row">
+                            <label for="dob" class="col-md-4 col-form-label text-md-right">DOB</label>
+                            <div class="col-md-6">
+                                <input type="date" id="dob" class="form-control" name="dob" required [(ngModel)]="register.dob">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="Gender" class="col-md-4 col-form-label text-md-right">Gender</label>
+                          <div class="col-md-6">
+                            <label class="radio-inline">
+                              <input type="radio" name="optradio" value="female" checked [(ngModel)]="register.gender">Female
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="optradio" value="male" [(ngModel)]="register.gender">Male
+                            </label>
+
+                            <label class="radio-inline">
+                              <input type="radio" name="optradio" value="other" [(ngModel)]="register.gender">Other
+                            </label>
+                          </div>
+                      </div>
+                            <div class="form-group row">
+                                <label for="phone_number" class="col-md-4 col-form-label text-md-right">Phone Number</label>
+                                <div class="col-md-6">
+                                    <input type="text" id="phonenumber" class="form-control" name="phonenumber" required [(ngModel)]="register.phoneno">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="present_address" class="col-md-4 col-form-label text-md-right">Address</label>
+                                <div class="col-md-6">
+                                    <input type="text" id="address" class="form-control" name="address" required [(ngModel)]="register.address">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="nid_number" class="col-md-4 col-form-label text-md-right"> Aadhar Number</label>
+                                <div class="col-md-6">
+                                    <input type="number" id="aadharnumber" class="form-control" name="aadharnumber" required [(ngModel)]="register.aadhar">
+                                </div>
+                            </div>
+                                <div class="col-md-6 offset-md-4">
+                                    <button class="btn btn-success" (click)="registerr()">Register</button>
+                                    
+                                    <a routerLink="/login" class="btn btn-link">Cancel</a>
+                                </div>
+                            </form>
+                      </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>
